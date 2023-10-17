@@ -3,8 +3,9 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Route Addition
-@app.route('/greet/<name>')
-def greet(name):
+@app.route('/greet')
+def greet():
+    name = "sagar"
     return f"Hello {name}"
 
 # POST Method
